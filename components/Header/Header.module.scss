@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.logoInner{
+    width: 210px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    span{
+        font-size: 30px;
+    }
+    img{
+        position: absolute;
+        right: 0;
+        top: -17px;
+    }
+}
