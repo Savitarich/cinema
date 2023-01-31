@@ -2,6 +2,8 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.scss";
 
+import PreviewSlider from "@/components/PrevievSlider/PreviewSlider";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -22,6 +24,9 @@ export default function Home() {
                     href='/images/logo.svg'
                 />
             </Head>
+            <main>
+                <PreviewSlider></PreviewSlider>
+            </main>
         </>
     );
 }

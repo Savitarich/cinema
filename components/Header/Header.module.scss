@@ -1,3 +1,9 @@
+.header{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(69, 8, 59, 0.9);
+}
 .row{
     display: flex;
     justify-content: space-between;

@@ -3,13 +3,13 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import Navbar from "../Navbar/Navbar";
+import Navbar from "./Navbar/Navbar";
 
 const Header: React.FC = () => {
-    const { row, logoInner } = styles;
+    const { header, row, logoInner } = styles;
 
     return (
-        <header>
+        <header className={header}>
             <div className='container'>
                 <div className={row}>
                     <Link
