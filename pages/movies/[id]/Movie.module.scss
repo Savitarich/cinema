@@ -1,0 +1,45 @@
+.root{
+    
+}
+.innerBackground{
+    min-height: 560px;
+    position: relative;
+
+}
+.contentWrapper{
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    gap: 25px;
+}
+.textWrapper{
+    h3{
+        font-size: 32px;
+    }
+    p{
+        font-size: 28px;
+    }
+    .buttonToFavorites{
+        display: flex;
+        align-items: center;
+        transition: all .3s;
+        svg{
+            fill: #fff;
+            transition: all .3s;
+        }
+        &:hover{
+            color: #e91e63;
+            svg{
+                fill: #e91e63;
+            }
+        }
+    }
+    
+}

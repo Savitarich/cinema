@@ -6,10 +6,10 @@ import Image from "next/image";
 import Navbar from "./Navbar/Navbar";
 
 const Header: React.FC = () => {
-    const { header, row, logoInner } = styles;
+    const { row, logoInner } = styles;
 
     return (
-        <header className={header}>
+        <header>
             <div className='container'>
                 <div className={row}>
                     <Link

@@ -24,7 +24,7 @@ const ItemSlider: React.FC<ItemSliderProps> = ({
                 backgroundImage: `url(https://image.tmdb.org/t/p/original${image})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "top center",
+                backgroundPosition: "center center",
             }}
         >
             <div className={row}>
