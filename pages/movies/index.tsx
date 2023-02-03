@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Movie.module.scss";
+import styles from "./Movies.module.scss";
 import { useRouter } from "next/router";
 
 const Movies: React.FC = () => {
