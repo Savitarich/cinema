@@ -6,6 +6,8 @@ import Image from "next/image";
 
 import { getMovieByIdType } from "@/types";
 
+import MovieDescription from "@/components/MovieDescription/MovieDescription";
+
 const Movie: React.FC = () => {
     const {
         root,
@@ -76,6 +78,7 @@ const Movie: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                        <MovieDescription {...movieInfo}></MovieDescription>
                     </div>
                 </div>
             ) : (

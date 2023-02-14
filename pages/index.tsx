@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.scss";
 
 import PreviewSlider from "@/components/PrevievSlider/PreviewSlider";
+import PopularSeries from "@/components/PopularSeries/PopularSeries";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function Home() {
             </Head>
             <main>
                 <PreviewSlider></PreviewSlider>
+                <PopularSeries></PopularSeries>
             </main>
         </>
     );

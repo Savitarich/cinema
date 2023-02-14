@@ -40,7 +40,7 @@ const PreviewSlider: React.FC = () => {
     }, []);
 
     return (
-        <div className={root}>
+        <section className={root}>
             <div className={container}>
                 <div className={rowSlider}>
                     <Slider {...settingsForSlider}>
@@ -60,7 +60,7 @@ const PreviewSlider: React.FC = () => {
                     </Slider>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
