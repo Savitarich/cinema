@@ -15,7 +15,7 @@ const ItemSlider: React.FC<ItemSliderProps> = ({
     rating,
     id,
 }) => {
-    const { root, row, rowInfo, container } = styles;
+    const { root, row, rowInfo, container, subRowInfo } = styles;
 
     return (
         <div
@@ -31,10 +31,12 @@ const ItemSlider: React.FC<ItemSliderProps> = ({
                 <div className={container}>
                     <div className={rowInfo}>
                         <h3>{title}:</h3>
-                        <p>{rating}/10</p>
-                        <button>
-                            <Link href={`/movies/${id}`}>more</Link>
-                        </button>
+                        <div className={subRowInfo}>
+                            <p>{rating}/10</p>
+                            <button>
+                                <Link href={`/movies/${id}`}>more</Link>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

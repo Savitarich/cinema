@@ -6,7 +6,7 @@ import Link from "next/link";
 import { PopularSeriesListType } from "@/types";
 
 const PopularSeries: React.FC = () => {
-    const { root, row, mainSeries, rowInfo } = styles;
+    const { root, row, mainSeries, rowInfo, series } = styles;
 
     const [popularSeries, setPopularSeries] = useState<PopularSeriesListType[]>(
         []
@@ -62,6 +62,7 @@ const PopularSeries: React.FC = () => {
                             {popularSeries.map((elem, index) =>
                                 index > 0 ? (
                                     <div
+                                        className={series}
                                         key={index}
                                         style={{
                                             backgroundImage: `url(https://image.tmdb.org/t/p/original${elem.poster_path})`,

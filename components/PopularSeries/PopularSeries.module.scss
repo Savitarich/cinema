@@ -1,10 +1,11 @@
 .root{
-    padding: 40px 0;
+    padding: 30px 0;
     h2{
         font-size: 56px;
         text-align: center;
         margin-bottom: 20px;
         font-weight: 200;
+        line-height: 100%;
     }
 }
 .row{
@@ -12,10 +13,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 560px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     .mainSeries{
         grid-column: span 2;
+        
+    }
+    .series, .mainSeries{
+        border: 2px solid #000;
+        transition: all .3s;
+        &:hover{
+            border: 2px solid #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+        }
     }
 }
 .rowInfo{
@@ -44,5 +52,74 @@
                 color: #7b1fa2;
             }
         }
+    }
+}
+@media (max-width: 911px) {
+    .row{
+        grid-template-rows: repeat(2, 420px);
+    }
+    .rowInfo{
+        h3{
+            font-size: 24px;
+        }
+        button{
+            padding: 5px 10px;
+        }
+    }
+}
+@media (max-width: 726px) {
+    .root{
+        padding: 10px 0;
+    }
+    .row{
+        grid-template-rows: repeat(2, 340px);
+    }
+}
+@media (max-width: 641px) {
+    .row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 500px);
+    }
+}
+@media (max-width: 561px) {
+    .root{
+        h2{
+            font-size: 46px
+        }
+    }
+    .row{
+        grid-template-rows: repeat(3, 400px);
+    }
+    .rowInfo{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        gap: 5px;
+    }
+}
+@media (max-width: 461px) {
+    .row{
+        grid-template-rows: repeat(3, 310px);
+    }
+}
+@media (max-width: 361px) {
+    .row{
+        grid-template-rows: repeat(3, 250px);
+    }
+    .rowInfo{
+        h3{
+            font-size: 21px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .root{
+        h2{
+            font-size: 36px
+        }
+    }
+    .row{
+        grid-template-rows: repeat(3, 250px);
     }
 }
