@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    popular: [],
+    popularSerieses: [],
 };
 
-const movieSlice = createSlice({
-    name: "movie",
+const seriesSlice = createSlice({
+    name: "series",
     initialState,
     reducers: {},
 });

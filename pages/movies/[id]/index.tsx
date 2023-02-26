@@ -50,13 +50,13 @@ const Movie: React.FC = () => {
                         >
                             <div className={contentWrapper}>
                                 <Image
-                                    alt={movieInfo.original_title}
+                                    alt={movieInfo.title}
                                     src={`https://image.tmdb.org/t/p/original${movieInfo.poster_path}`}
                                     width={160}
                                     height={260}
                                 ></Image>
                                 <div className={textWrapper}>
-                                    <h3>{movieInfo.original_title}</h3>
+                                    <h3>{movieInfo.title}</h3>
                                     <p>{movieInfo.tagline}</p>
                                     <button className={buttonToFavorites}>
                                         Add to favorites
