@@ -1,118 +1,117 @@
-.root{
-    height: calc(100vh - 95.33px);
+.root {
+    height: calc(100vh - 88.33px);
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     line-height: 205%;
 }
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px 0;
 }
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.rowInfo{
+.rowInfo {
     display: flex;
     gap: 30px;
     align-items: center;
-    h3{
+    h3 {
         font-size: 40px;
     }
-    
-    .subRowInfo{
+
+    .subRowInfo {
         display: flex;
         gap: 5px;
         align-items: center;
-        p{
+        p {
             font-size: 32px;
             font-weight: 300;
         }
-        button{
+        button {
             padding: 10px 30px;
             background-color: #7b1fa2;
             border: 1px solid #7b1fa2;
-            transition: all .3s;
-            a{
-                transition: all .3s;
+            transition: all 0.3s;
+            a {
+                transition: all 0.3s;
             }
-            &:hover{
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+            &:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2),
+                    0 16px 20px rgba(0, 0, 0, 0.2);
                 background-color: #fff;
-                a{
+                a {
                     color: #7b1fa2;
                 }
             }
         }
     }
-    
 }
-@media (max-width: 1081px){
-    .root{
+@media (max-width: 1081px) {
+    .root {
         height: 600px;
     }
 }
-@media (max-width: 881px){
-    .root{
+@media (max-width: 881px) {
+    .root {
         height: 500px;
     }
 }
-@media (max-width: 771px){
-    .root{
+@media (max-width: 771px) {
+    .root {
         height: 400px;
     }
 }
 @media (max-width: 691px) {
-    .rowInfo{
+    .rowInfo {
         gap: 10px;
-        h3{
+        h3 {
             font-size: 30px;
         }
     }
 }
-@media (max-width: 595px){
-    .row{
+@media (max-width: 595px) {
+    .row {
         padding: 5px 0;
     }
-    .root{
+    .root {
         height: 300px;
     }
-    .rowInfo{
+    .rowInfo {
         display: flex;
         gap: 5px;
         align-items: center;
-        h3{
+        h3 {
             font-size: 32px;
             font-weight: 300;
         }
-        
-        .subRowInfo{
-            p{
+
+        .subRowInfo {
+            p {
                 font-size: 27px;
                 font-weight: 200;
             }
-            button{
+            button {
                 padding: 2px 10px;
             }
         }
-        
     }
 }
 @media (max-width: 521px) {
-    .rowInfo{
+    .rowInfo {
         text-align: center;
         flex-direction: column;
     }
 }
 @media (max-width: 441px) {
-    .root{
+    .root {
         height: 220px;
     }
-    .rowInfo{
+    .rowInfo {
         text-align: center;
         flex-direction: column;
     }
