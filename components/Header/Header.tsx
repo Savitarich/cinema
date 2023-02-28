@@ -1,11 +1,12 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
 import Navbar from "./Navbar/Navbar";
 
-const Header: React.FC = () => {
+const Header: NextPage = () => {
     const { row, logoInner } = styles;
 
     return (

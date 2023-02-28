@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NextPage } from "next";
 import styles from "./Movie.module.scss";
 import { useRouter } from "next/router";
 import axios from "axios";
@@ -8,7 +9,7 @@ import { getMovieByIdType } from "@/types";
 
 import MovieDescription from "@/components/MovieDescription/MovieDescription";
 
-const Movie: React.FC = () => {
+const Movie: NextPage = () => {
     const {
         root,
         innerBackground,

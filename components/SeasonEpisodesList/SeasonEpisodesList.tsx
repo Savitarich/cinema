@@ -1,11 +1,12 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./SeasonEpisodesList.module.scss";
 
 import { SeasonType } from "@/types";
 
 import SeasonEpisodeItem from "../SeasonEpisodeItem/SeasonEpisodeItem";
 
-const SeasonEpisodesList: React.FC<SeasonType> = ({ episodes }) => {
+const SeasonEpisodesList: NextPage<SeasonType> = ({ episodes }) => {
     const { root, row } = styles;
     return (
         <>

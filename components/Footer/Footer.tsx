@@ -1,7 +1,8 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./Footer.module.scss";
 
-const Footer: React.FC = () => {
+const Footer: NextPage = () => {
     return <footer></footer>;
 };
 

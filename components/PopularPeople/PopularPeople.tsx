@@ -1,9 +1,10 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./PopularPeople.module.scss";
 
 import PopularPeopleSlider from "../PopularPeopleSlider/PopularPeopleSlider";
 
-const PopularPeople: React.FC = () => {
+const PopularPeople: NextPage = () => {
     const { root, container } = styles;
     return (
         <>

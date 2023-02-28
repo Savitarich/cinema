@@ -1,4 +1,5 @@
 import React from "react";
+import { NextPage } from "next";
 import Link from "next/link";
 
 type PopularPeopleItemProps = {
@@ -7,7 +8,7 @@ type PopularPeopleItemProps = {
     profile_path: string;
 };
 
-const PopularPeopleSliderItem: React.FC<PopularPeopleItemProps> = ({
+const PopularPeopleSliderItem: NextPage<PopularPeopleItemProps> = ({
     id,
     name,
     profile_path,

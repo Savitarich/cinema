@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NextPage } from "next";
 import axios from "axios";
 import Slider from "react-slick";
 
@@ -6,7 +7,7 @@ import { PopularPeopleType } from "@/types";
 
 import PopularPeopleSliderItem from "./PopularPeopleSliderItem/PopularPeopleSliderItem";
 
-const PopularPeopleSlider: React.FC = () => {
+const PopularPeopleSlider: NextPage = () => {
     const settings = {
         className: "center",
         centerMode: true,

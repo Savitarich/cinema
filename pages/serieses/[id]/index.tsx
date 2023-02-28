@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NextPage } from "next";
 import styles from "./Series.module.scss";
 import { useRouter } from "next/router";
 import axios from "axios";
@@ -9,7 +10,7 @@ import { SeriesByIdInfoType } from "@/types";
 import SeriesDescription from "@/components/SeriesDescription/SeriesDescription";
 import SeriesSeasonsList from "@/components/SeriesSeasons/SeriesSeasons";
 
-const Series: React.FC = () => {
+const Series: NextPage = () => {
     const {
         root,
         innerBackground,

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ItemSlider.module.scss";
+import { NextPage } from "next";
 import Link from "next/link";
 
 type ItemSliderProps = {
@@ -9,7 +10,7 @@ type ItemSliderProps = {
     rating: number;
 };
 
-const ItemSlider: React.FC<ItemSliderProps> = ({
+const ItemSlider: NextPage<ItemSliderProps> = ({
     image,
     title,
     rating,

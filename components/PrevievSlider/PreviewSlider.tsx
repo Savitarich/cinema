@@ -1,4 +1,5 @@
-import React, { useEffect, useState, MutableRefObject } from "react";
+import React, { useEffect, useState } from "react";
+import { NextPage } from "next";
 import styles from "./PreviewSlider.module.scss";
 import axios from "axios";
 
@@ -8,7 +9,7 @@ import { PopularMovieListType } from "@/types";
 
 import ItemSlider from "./ItemSlider/ItemSlider";
 
-const PreviewSlider: React.FC = () => {
+const PreviewSlider: NextPage = () => {
     const { root, rowSlider, container } = styles;
 
     const settingsForSlider = {

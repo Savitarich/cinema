@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NextPage } from "next";
 import styles from "./Season.module.scss";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -7,7 +8,7 @@ import { SeasonType } from "@/types";
 
 import SeasonEpisodesList from "@/components/SeasonEpisodesList/SeasonEpisodesList";
 
-const Season: React.FC = () => {
+const Season: NextPage = () => {
     const {} = styles;
 
     const router = useRouter();

@@ -1,9 +1,10 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./MovieDescription.module.scss";
 
 import { getMovieByIdType } from "@/types";
 
-const MovieDescription: React.FC<getMovieByIdType> = ({
+const MovieDescription: NextPage<getMovieByIdType> = ({
     release_date,
     budget,
     genres,

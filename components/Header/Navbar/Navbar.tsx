@@ -1,11 +1,12 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navigation = [{ id: 1, title: "Home", path: "/" }];
 
-const Navbar: React.FC = () => {
+const Navbar: NextPage = () => {
     const {} = styles;
     return (
         <nav>

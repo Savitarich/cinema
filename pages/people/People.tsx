@@ -1,7 +1,8 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./People.module.scss";
 
-const People: React.FC = () => {
+const People: NextPage = () => {
     return <></>;
 };
 

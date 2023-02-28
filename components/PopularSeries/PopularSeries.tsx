@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from "./PopularSeries.module.scss";
+import { NextPage } from "next";
 import axios from "axios";
 import Link from "next/link";
 
 import { PopularSeriesListType } from "@/types";
 
-const PopularSeries: React.FC = () => {
+const PopularSeries: NextPage = () => {
     const { root, row, mainSeries, rowInfo, series } = styles;
 
     const [popularSeries, setPopularSeries] = useState<PopularSeriesListType[]>(

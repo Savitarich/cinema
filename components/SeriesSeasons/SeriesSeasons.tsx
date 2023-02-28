@@ -1,10 +1,11 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./SeriesSeasons.module.scss";
 import Link from "next/link";
 
 import { SeriesByIdInfoType } from "@/types";
 
-const SeriesSeasonsList: React.FC<SeriesByIdInfoType> = ({ seasons, id }) => {
+const SeriesSeasonsList: NextPage<SeriesByIdInfoType> = ({ seasons, id }) => {
     const { root, row, card, cardBox, infoBox, date, episodeCount } = styles;
     console.log(seasons);
 

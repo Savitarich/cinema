@@ -1,9 +1,10 @@
 import React from "react";
+import { NextPage } from "next";
 import styles from "./SeriesDescription.module.scss";
 
 import { SeriesByIdInfoType } from "@/types";
 
-const SeriesDescription: React.FC<SeriesByIdInfoType> = ({
+const SeriesDescription: NextPage<SeriesByIdInfoType> = ({
     first_air_date,
     genres,
     production_countries,

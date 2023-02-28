@@ -1,5 +1,5 @@
-import { url } from "inspector";
 import React, { useState, useEffect } from "react";
+import { NextPage } from "next";
 import styles from "./SeasonEpisodeItem.module.scss";
 
 type SeasonEpisodeInfoType = {
@@ -12,7 +12,7 @@ type SeasonEpisodeInfoType = {
     runtime?: number;
 };
 
-const SeasonEpisodeItem: React.FC<SeasonEpisodeInfoType> = ({
+const SeasonEpisodeItem: NextPage<SeasonEpisodeInfoType> = ({
     overview,
     vote_average,
     still_path,
