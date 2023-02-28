@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.scss";
 
 import PreviewSlider from "@/components/PrevievSlider/PreviewSlider";
 import PopularSeries from "@/components/PopularSeries/PopularSeries";
+import PopularPeople from "@/components/PopularPeople/PopularPeople";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function Home() {
             <main>
                 <PreviewSlider></PreviewSlider>
                 <PopularSeries></PopularSeries>
+                <PopularPeople></PopularPeople>
             </main>
         </>
     );

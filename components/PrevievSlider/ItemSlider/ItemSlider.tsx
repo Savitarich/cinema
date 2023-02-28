@@ -33,7 +33,7 @@ const ItemSlider: React.FC<ItemSliderProps> = ({
                         <h3>{title}:</h3>
                         <div className={subRowInfo}>
                             <p>{rating}/10</p>
-                            <button>
+                            <button className='button'>
                                 <Link href={`/movies/${id}`}>more</Link>
                             </button>
                         </div>

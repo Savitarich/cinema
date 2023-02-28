@@ -29,7 +29,6 @@ const SeasonEpisodeItem: React.FC<SeasonEpisodeInfoType> = ({
         contentTop,
         contentBottom,
         episodeNumber,
-        button,
         description,
         contentWrapper,
     } = styles;
@@ -68,7 +67,7 @@ const SeasonEpisodeItem: React.FC<SeasonEpisodeInfoType> = ({
                         Episode: <span>{episode_number}</span>
                     </p>
                     <button
-                        className={button}
+                        className='button'
                         onClick={handleClick}
                     >
                         more
@@ -89,7 +88,7 @@ const SeasonEpisodeItem: React.FC<SeasonEpisodeInfoType> = ({
                     </div>
                     <div className={contentBottom}>
                         <button
-                            className={button}
+                            className='button'
                             onClick={handleClick}
                         >
                             back

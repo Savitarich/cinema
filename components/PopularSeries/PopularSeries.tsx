@@ -50,7 +50,7 @@ const PopularSeries: React.FC = () => {
                             >
                                 <div className={rowInfo}>
                                     <h3>{popularSeries[0].name}</h3>
-                                    <button>
+                                    <button className='button'>
                                         <Link
                                             href={`/serieses/${popularSeries[0].id}`}
                                         >
@@ -73,7 +73,7 @@ const PopularSeries: React.FC = () => {
                                     >
                                         <div className={rowInfo}>
                                             <h3>{elem.name}</h3>
-                                            <button>
+                                            <button className='button'>
                                                 <Link
                                                     href={`/serieses/${elem.id}`}
                                                 >

@@ -74,7 +74,7 @@ const MovieDescription: React.FC<getMovieByIdType> = ({
                         <tr>
                             <td className={firstColumn}>Grade:</td>
                             <td className={secondColumn}>
-                                {Math.floor(vote_average * 10) / 10}
+                                {Math.floor(vote_average * 10) / 10}/10
                             </td>
                         </tr>
                     </tbody>

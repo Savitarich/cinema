@@ -23,6 +23,24 @@ a {
 button {
     font-size: 20px;
 }
+.button {
+    padding: 5px 20px;
+    background-color: #7b1fa2;
+    border: 1px solid #7b1fa2;
+    transition: all 0.3s;
+    a {
+        transition: all 0.3s;
+    }
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2),
+            0 16px 20px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        color: #7b1fa2;
+        a {
+            color: #7b1fa2;
+        }
+    }
+}
 .container {
     max-width: 1240px;
     padding: 0 10px;
@@ -46,6 +64,7 @@ button {
         }
     }
 }
+
 @media (max-width: 321px) {
     .slick-slider {
         .slick-dots {
@@ -55,6 +74,169 @@ button {
                     content: "";
                     background-color: #fff;
                     width: 47px;
+                }
+            }
+        }
+    }
+}
+// Popular People slider
+.popular-people__slider {
+    .slick-prev {
+        &::before {
+            content: url(/images/slider-people/arrow-prev.svg);
+            display: inline-block;
+            width: 30px;
+            position: absolute;
+            left: -10px;
+        }
+    }
+    .slick-next {
+        &::before {
+            content: url(/images/slider-people/arrow-next.svg);
+            display: inline-block;
+            width: 30px;
+        }
+    }
+    .slick-track {
+        min-height: 520px;
+        display: flex;
+        align-items: center;
+    }
+    .popular-people__slide-box {
+        min-height: 480px;
+        width: 95%;
+        transition: all 0.3s;
+        .popular-people__row-info {
+            min-height: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s;
+            h3 {
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+                font-size: 27px;
+                font-weight: 300;
+            }
+            .popular-people__content-bottom {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .center {
+        .slick-center {
+            .popular-people__slide-box {
+                min-height: 520px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2),
+                    0 16px 20px rgba(0, 0, 0, 0.2);
+                .popular-people__row-info {
+                    min-height: 520px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 921px) {
+    .popular-people__slider {
+        .slick-track {
+            min-height: 360px;
+        }
+        .popular-people__slide-box {
+            min-height: 340px;
+            .popular-people__row-info {
+                min-height: 340px;
+                h3 {
+                    font-size: 24px;
+                }
+            }
+        }
+        .center {
+            .slick-center {
+                .popular-people__slide-box {
+                    min-height: 360px;
+                    .popular-people__row-info {
+                        min-height: 360px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 841px) {
+    .popular-people__slider {
+        .slick-track {
+            min-height: 340px;
+        }
+
+        .center {
+            .slick-center {
+                .popular-people__slide-box {
+                    min-height: 340px;
+                    .popular-people__row-info {
+                        min-height: 340px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 621px) {
+    .popular-people__slider {
+        .slick-track {
+            min-height: 440px;
+        }
+        .popular-people__slide-box {
+            min-height: 400px;
+            .popular-people__row-info {
+                min-height: 400px;
+            }
+        }
+        .center {
+            .slick-center {
+                .popular-people__slide-box {
+                    min-height: 440px;
+                    .popular-people__row-info {
+                        min-height: 440px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 421px) {
+    .popular-people__slider {
+        .popular-people__slide-box {
+            .popular-people__row-info {
+                h3 {
+                    padding: 2px;
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 341px) {
+    .popular-people__slider {
+        .slick-track {
+            min-height: 360px;
+        }
+        .popular-people__slide-box {
+            min-height: 320px;
+            .popular-people__row-info {
+                min-height: 320px;
+            }
+        }
+        .center {
+            .slick-center {
+                .popular-people__slide-box {
+                    min-height: 360px;
+                    .popular-people__row-info {
+                        min-height: 360px;
+                    }
                 }
             }
         }

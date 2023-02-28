@@ -69,18 +69,3 @@
 .flipped .back {
     transform: rotateY(0);
 }
-.button {
-    padding: 5px 20px;
-    background-color: #7b1fa2;
-    border: 1px solid #7b1fa2;
-    transition: all 0.3s;
-    a {
-        transition: all 0.3s;
-    }
-    &:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2),
-            0 16px 20px rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-        color: #7b1fa2;
-    }
-}
