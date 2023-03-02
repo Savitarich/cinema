@@ -22,14 +22,12 @@ const PeopleTabs: NextPage = () => {
                     <Tab>Serieses</Tab>
                 </TabList>
 
-                <div className='.people-tabs__panels'>
-                    <TabPanel>
-                        <PeopleTabMovies></PeopleTabMovies>
-                    </TabPanel>
-                    <TabPanel>
-                        <PeopleTabSeries></PeopleTabSeries>
-                    </TabPanel>
-                </div>
+                <TabPanel>
+                    <PeopleTabMovies></PeopleTabMovies>
+                </TabPanel>
+                <TabPanel>
+                    <PeopleTabSeries></PeopleTabSeries>
+                </TabPanel>
             </Tabs>
         </>
     );
