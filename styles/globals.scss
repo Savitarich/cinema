@@ -242,3 +242,19 @@ button {
         }
     }
 }
+// PeopleTabs
+.people-tabs__buttons {
+    display: flex;
+    justify-content: center;
+    .react-tabs__tab {
+        font-size: 27px;
+        padding: 15px 50px;
+        transition: all 0.3s;
+        border: 3px dotted #fff;
+        cursor: pointer;
+    }
+    .react-tabs__tab--selected {
+        background-color: #fff;
+        color: #000;
+    }
+}

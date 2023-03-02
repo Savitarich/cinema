@@ -8,7 +8,7 @@ import Image from "next/image";
 import { SeriesByIdInfoType } from "@/types";
 
 import SeriesDescription from "@/components/SeriesDescription/SeriesDescription";
-import SeriesSeasonsList from "@/components/SeriesSeasons/SeriesSeasons";
+import SeriesSeasonsList from "@/components/SeriesSeasonsList/SeriesSeasonsList";
 
 const Series: NextPage = () => {
     const {
@@ -43,12 +43,16 @@ const Series: NextPage = () => {
                     <div className='container'>
                         <div
                             className={innerBackground}
-                            style={{
-                                backgroundImage: `url(https://image.tmdb.org/t/p/original${seriesInfo.backdrop_path})`,
-                                backgroundSize: "cover",
-                                backgroundRepeat: "no-repeat",
-                                backgroundPosition: "center center",
-                            }}
+                            style={
+                                seriesInfo.backdrop_path
+                                    ? {
+                                          backgroundImage: `url(https://image.tmdb.org/t/p/original${seriesInfo.backdrop_path})`,
+                                      }
+                                    : {
+                                          backgroundImage:
+                                              "linear-gradient(190deg, #fffc61 0, #ffe557 16.67%, #f6cc4f 33.33%, #e5b148 50%, #d29842 66.67%, #c0823d 83.33%, #af6f39 100%)",
+                                      }
+                            }
                         >
                             <div className={contentWrapper}>
                                 <Image

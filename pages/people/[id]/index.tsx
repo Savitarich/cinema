@@ -4,6 +4,7 @@ import styles from "./Person.module.scss";
 import { useRouter, NextRouter } from "next/router";
 
 import PeopleBiography from "@/components/PeopleBiography/PeopleBiography";
+import PeopleTabs from "@/components/PeopleTabs/PeopleTabs";
 
 const Person: NextPage = () => {
     const { root, row } = styles;
@@ -17,6 +18,7 @@ const Person: NextPage = () => {
                 <div className={row}>
                     {id && <PeopleBiography id={id}></PeopleBiography>}
                 </div>
+                <PeopleTabs></PeopleTabs>
             </div>
         </div>
     );

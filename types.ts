@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export type PopularMovieListType = {
     backdrop_path: string;
     id: number;
@@ -158,3 +160,26 @@ export type PopularPeopleType = {
     popularity: number;
     profile_path: string;
 }[];
+
+export type PeopleWorkType = {
+    adult?: boolean;
+    backdrop_path?: string | null;
+    genre_ids?: number[];
+    id?: number;
+    original_language?: string;
+    original_title?: string;
+    original_name?: string;
+    overview?: string;
+    popularity?: number;
+    poster_path?: string;
+    release_date?: string;
+    title?: string;
+    name?: string;
+    video?: boolean;
+    vote_average?: number;
+    vote_count?: number;
+    character?: string;
+    credit_id?: string;
+    order?: number;
+    episode_count?: number;
+};

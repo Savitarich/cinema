@@ -1,9 +1,11 @@
-.innerBackground{
+.innerBackground {
     min-height: 560px;
     position: relative;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.contentWrapper{
+.contentWrapper {
     position: absolute;
     padding: 30px;
     display: flex;
@@ -16,45 +18,44 @@
     margin: auto;
     gap: 25px;
 }
-.textWrapper{
-    h3{
+.textWrapper {
+    h3 {
         font-size: 32px;
         margin-bottom: 10px;
     }
-    p{
+    p {
         font-size: 28px;
         margin-bottom: 15px;
     }
-    .buttonToFavorites{
+    .buttonToFavorites {
         margin: 0 auto;
         display: flex;
         align-items: center;
-        transition: all .3s;
-        svg{
+        transition: all 0.3s;
+        svg {
             fill: #fff;
-            transition: all .3s;
+            transition: all 0.3s;
         }
-        &:hover{
+        &:hover {
             color: #e91e63;
-            svg{
+            svg {
                 fill: #e91e63;
             }
         }
     }
-    
 }
-@media (max-width: 631px){
-    .textWrapper{
-        h3{
+@media (max-width: 631px) {
+    .textWrapper {
+        h3 {
             font-size: 28px;
         }
-        p{
+        p {
             font-size: 22px;
         }
     }
 }
-@media (max-width: 481px){
-    .contentWrapper{
+@media (max-width: 481px) {
+    .contentWrapper {
         flex-direction: column;
         align-items: center;
         text-align: center;

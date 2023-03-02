@@ -1,6 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
-import styles from "./SeriesSeasons.module.scss";
+import styles from "./SeriesSeasonsList.module.scss";
 import Link from "next/link";
 
 import { SeriesByIdInfoType } from "@/types";
