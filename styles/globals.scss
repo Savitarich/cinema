@@ -258,3 +258,21 @@ button {
         color: #000;
     }
 }
+@media (max-width: 421px) {
+    .people-tabs__buttons {
+        .react-tabs__tab {
+            font-size: 24px;
+            padding: 10px 30px;
+            border: 2px dotted #fff;
+        }
+    }
+}
+@media (max-width: 341px) {
+    .people-tabs__buttons {
+        .react-tabs__tab {
+            font-size: 21px;
+            padding: 10px 25px;
+            border: 2px dotted #fff;
+        }
+    }
+}
